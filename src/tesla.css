@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  
+}
+.section {
+    height: 100vh;
+    background: url(model-s.jpg) no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+}
+.section #Heading{
+    padding-bottom: 10rem;
+    text-align: center;
+    margin: 19px;
+}
+.section #Heading h1{
+    /* padding-bottom: 1rem; */
+    margin: 20px;
+}
+.section ul {
+    display: flex;
+    list-style-type: none;
+}
+.section #img{
+    width: 50px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    
+
+}
+.section ul li {
+    margin-right: 12px;
+}
+.section ul a{
+    padding: .2rem 2rem;
+    width: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 26px;
+    background-color: darkgray;
+    font-size: 19px;
+    
+    
+}
+.section ul li:last-of-type a{
+    background: black;
+    color: white;
+}
+#aside{
+    height: 100vh;
+    position: fixed;
+    width: 300px;
+    top: 0;
+    
+    
+}
+#aside ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  
+    
+}
+#aside ul li {
+    padding: .2rem 1rem;
+    
+}
+#cross{
+    position: absolute;
+    right: 1rem;
+    top: 2rem;   
+    
+}
+.d-flex{
+    font-size: 12px;
+    font-weight: grey;   
+}
+.AsideMove{
+    transition: all 0.7s ease-in-out;
+}

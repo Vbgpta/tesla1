@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aman Meesho JS Effect</title>
+  <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="boxes">
+      <div class="box box1">
+        <span class='close'>&times;</span>
+        <div class="content">
+          <h3>Box 1</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente corporis laudantium ea rem velit nemo ad
+            amet perspiciatis magnam</p>
+        </div>
+        <img src="https://via.placeholder.com/150x300" alt="">
+      </div>
+
+      <div class="box box2">
+        <span class='close'>&times;</span>
+        <div class="content">
+          <h3>Box 2</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente corporis laudantium ea rem velit nemo ad
+            amet perspiciatis magnam</p>
+        </div>
+        <img src="https://via.placeholder.com/150x300" alt="">
+      </div>
+
+      <div class="box box3">
+        <span class='close'>&times;</span>
+        <div class="content">
+          <h3>Box 3</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente corporis laudantium ea rem velit nemo ad
+            amet perspiciatis magnam</p>
+        </div>
+        <img src="https://via.placeholder.com/150x300" alt="">
+      </div>
+
+      <div class="box box4">
+        <span class='close'>&times;</span>
+        <div class="content">
+          <h3>Box 4</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente corporis laudantium ea rem velit nemo ad
+            amet perspiciatis magnam</p>
+        </div>
+        <img src="https://via.placeholder.com/150x300" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const boxes = document.querySelectorAll(".box")
+    // const closeIcons = document.querySelectorAll(".box .close")
+    boxes.forEach((box) => {
+      box.onclick = () => {
+        boxes.forEach((box) => {
+          if (box.classList.contains("active"))
+            box.classList.remove("active");
+        })
+        box.classList.add("active")
+      }
+      const close = box.children[0]
+      close.onclick = () => {
+        close.parentElement.classList.remove("active")
+     
+      }
+    })
+  </script>
+</body>
+
+</html>
